@@ -3,14 +3,14 @@
 
 Button verification with periodic username keyword search & join scan to cleanup bots!
 
-## Install requirements:  
+## Install Requirements:  
 ```
-   git clone https://github.com/whosman/botty_verification
-   cd /botty_verification
-   pip install -r requirements.txt
-   git clone https://github.com/Pycord-Development/pycord
-   cd pycord
-   pip install -U .[voice]
+git clone https://github.com/whosman/botty_verification
+cd /botty_verification
+pip install -r requirements.txt
+git clone https://github.com/Pycord-Development/pycord
+cd pycord
+pip install -U .[voice]
 ```
 ## Setting up the Discord Bot
 1. Navigate to the Discord Developer Portal  
