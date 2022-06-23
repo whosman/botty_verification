@@ -7,7 +7,7 @@ Button verification with periodic username keyword search & join scan to cleanup
 
 1. Install requirements:  
    `git clone https://github.com/whosman/botty_verification`  
-   `cd /installation-directory`  
+   `cd \botty_verification`  
    `pip install -r requirements.txt`  
    `git clone https://github.com/Pycord-Development/pycord`  
    `cd pycord`  
