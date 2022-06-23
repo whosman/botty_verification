@@ -44,4 +44,4 @@ pip install -U .[voice]
 ## Usage
 1. Host & run this externally for reliable 24/7 usage
 2. Python output from the script should just be "Logged in as xxx#xx" (your discord bot username)
-3. In the verification channel (id of which matches `channel_id` in main.py), send ">>>postbutton" to trigger the bot to post the verification button
+3. In the verification channel (id of which matches `channel_id` in main.py), send ">>>postbutton" (no quotes) to trigger the bot to post the verification button
