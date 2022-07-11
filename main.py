@@ -5,7 +5,6 @@ keywordbanlist = ["captcha", "scammerbot"]  # keyword list of banned words in us
 role_id = 123  # role id of verified users
 channel_id = 123  # verification channel id
 token = "xxx" # from the discord developer panel -> bot section 
-
 class PersistentView(discord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
@@ -38,7 +37,7 @@ class PersistentViewBot(commands.Bot):
 
     async def on_ready(self):
         if not self.persistent_views_added:
-            self.add_view(PersistentView())
+            super().add_view(PersistentView())
             self.persistent_views_added = True
         if not usercheck.is_running():
             usercheck.start()
@@ -69,3 +68,4 @@ async def usercheck():
                 await members.ban(reason="bot")
 
 bot.run(token)
+
