@@ -21,9 +21,12 @@ class PersistentView(discord.ui.View):
                 await member.ban(reason="baddy")
                 baddy = True
         if baddy == False:
-            await interaction.response.send_message("Verified!", ephemeral=True)
-            await member.add_roles(role)
-            await interaction.response.defer()
+            if role not in member.roles:
+                await interaction.response.send_message("Verified!", ephemeral=True)
+                await member.add_roles(role)
+                await interaction.response.defer()
+            else:
+                await interaction.response.send_message("Already Verified.", ephemeral=True)
         else:
             print("baddy detected")
 
