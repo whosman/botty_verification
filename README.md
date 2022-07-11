@@ -3,15 +3,18 @@
 
 Button verification with periodic username keyword search & join scan to cleanup bots!
 
-## Install Requirements:  
+## Install:  
 ```
 git clone https://github.com/whosman/botty_verification
-cd /botty_verification
-pip install -r requirements.txt
-git clone https://github.com/Pycord-Development/pycord
-cd pycord
-pip install -U .[voice]
 ```
+
+## Heroku Hosting  
+1. ```heroku login```
+2. cd into botty_verification, create a Procfile with "worker: python main.py" (no quotes)
+3. ```git add .```
+4. ```git commit -am "make it better"```
+5. ``` git push heroku master```
+
 ## Setting up the Discord Bot
 1. Navigate to the Discord Developer Portal  
 2. Select “New Application” then name accordingly  
